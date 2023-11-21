@@ -45,7 +45,7 @@
         "annotations": [
           {
             "name": "PBI_NavigationStepName",
-            "value": "Navegação"
+            "value": "Navigation"
           },
           {
             "name": "PBI_ResultType",
@@ -159,6 +159,23 @@
             "lineageTag": "ccbac47e-f134-4d66-a8ce-206b39e1c510",
             "sourceColumn": "writing score",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "final average",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f0e04897-7e21-4103-af2f-a6b5c0c148a5",
+            "sourceColumn": "final average",
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "817bb8fb-a234-443c-9d63-c7c5a95d20ce",
@@ -171,9 +188,13 @@
                 "let",
                 "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\neo2g\\OneDrive\\Documentos\\Bases de Dados\\StudentsPerformance.csv\"),[Delimiter=\",\", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"gender\", type text}, {\"race/ethnicity\", type text}, {\"parental level of education\", type text}, {\"lunch\", type text}, {\"test preparation course\", type text}, {\"math score\", Int64.Type}, {\"reading score\", Int64.Type}, {\"writing score\", Int64.Type}})",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"gender\", type text}, {\"race/ethnicity\", type text}, {\"parental level of education\", type text}, {\"lunch\", type text}, {\"test preparation course\", type text}, {\"math score\", Int64.Type}, {\"reading score\", Int64.Type}, {\"writing score\", Int64.Type}}),",
+                "    #\"Added Custom\" = Table.AddColumn(#\"Tipo Alterado\", \"Custom\", each ([math score]+[reading score]+[writing score])/3),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Custom\", \"final note\"}}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"final note\", type number}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type\",{{\"final note\", \"final average\"}})",
                 "in",
-                "    #\"Tipo Alterado\""
+                "    #\"Renamed Columns1\""
               ],
               "type": "m"
             }

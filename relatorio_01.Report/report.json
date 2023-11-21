@@ -27,40 +27,40 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"85379cebd4958561caec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":96.71641791044776,\"y\":126.26865671641791,\"z\":0,\"width\":342.98507462686564,\"height\":331.34328358208955,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"StudentsPerformance.gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(StudentsPerformance.math score)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"},\"Name\":\"StudentsPerformance.gender\",\"NativeReferenceName\":\"gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"math score\"}},\"Function\":1},\"Name\":\"Sum(StudentsPerformance.math score)\",\"NativeReferenceName\":\"Média de math score\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"math score\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"85379cebd4958561caec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":38.50746268656716,\"y\":36.71641791044774,\"z\":0,\"width\":342.98507462686564,\"height\":331.34328358208955,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"StudentsPerformance.gender\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(StudentsPerformance.math score)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"},\"Name\":\"StudentsPerformance.gender\",\"NativeReferenceName\":\"gender\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"math score\"}},\"Function\":1},\"Name\":\"Sum(StudentsPerformance.math score)\",\"NativeReferenceName\":\"Média de math score\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"math score\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
           "height": 331.34,
           "width": 342.99,
-          "x": 96.72,
-          "y": 126.27,
+          "x": 38.51,
+          "y": 36.72,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"99691fa453e999e598ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":495.2238805970149,\"y\":308.95522388059703,\"z\":2000,\"width\":160.29850746268656,\"height\":189.8507462686567,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"StudentsPerformance.race/ethnicity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"race/ethnicity\"},\"Name\":\"StudentsPerformance.race/ethnicity\",\"NativeReferenceName\":\"race/ethnicity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"99691fa453e999e598ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":402.98507462686547,\"y\":220.29850746268644,\"z\":2000,\"width\":160.29850746268656,\"height\":189.8507462686567,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"StudentsPerformance.race/ethnicity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"race/ethnicity\"},\"Name\":\"StudentsPerformance.race/ethnicity\",\"NativeReferenceName\":\"race/ethnicity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
           "height": 189.85,
           "width": 160.30,
-          "x": 495.22,
-          "y": 308.96,
+          "x": 402.99,
+          "y": 220.30,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"9aaa804c293e3c860cdd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":495.2238805970149,\"y\":126.26865671641791,\"z\":1000,\"width\":160.29850746268656,\"height\":189.8507462686567,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"StudentsPerformance.race/ethnicity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"race/ethnicity\"},\"Name\":\"StudentsPerformance.race/ethnicity\",\"NativeReferenceName\":\"race/ethnicity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"9aaa804c293e3c860cdd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":402.98507462686547,\"y\":37.61194029850751,\"z\":1000,\"width\":160.29850746268656,\"height\":189.8507462686567,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"StudentsPerformance.race/ethnicity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"race/ethnicity\"},\"Name\":\"StudentsPerformance.race/ethnicity\",\"NativeReferenceName\":\"race/ethnicity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
           "height": 189.85,
           "width": 160.30,
-          "x": 495.22,
-          "y": 126.27,
+          "x": 402.99,
+          "y": 37.61,
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"f10ec8e1851470281882\",\"layouts\":[{\"id\":0,\"position\":{\"x\":811.3432835820895,\"y\":164.77611940298507,\"z\":2001,\"width\":342.98507462686564,\"height\":253.43283582089552,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(StudentsPerformance.gender)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2},\"Name\":\"Min(StudentsPerformance.gender)\",\"NativeReferenceName\":\"Count of gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"f10ec8e1851470281882\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590.149253731343,\"y\":37.61194029850751,\"z\":3000,\"width\":225.67164179104478,\"height\":156.71641791044775,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(StudentsPerformance.gender)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2},\"Name\":\"Min(StudentsPerformance.gender)\",\"NativeReferenceName\":\"Count of gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 253.43,
-          "width": 342.99,
-          "x": 811.34,
-          "y": 164.78,
-          "z": 2001.00
+          "height": 156.72,
+          "width": 225.67,
+          "x": 590.15,
+          "y": 37.61,
+          "z": 3000.00
         }
       ],
       "width": 1280.00
