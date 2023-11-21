@@ -186,7 +186,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\neo2g\\OneDrive\\Documentos\\Bases de Dados\\StudentsPerformance.csv\"),[Delimiter=\",\", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Fonte = Csv.Document(File.Contents(\"C:\\Users\\Public\\Documents\\Bases de Dados\\StudentsPerformance.csv\"),[Delimiter=\",\", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"gender\", type text}, {\"race/ethnicity\", type text}, {\"parental level of education\", type text}, {\"lunch\", type text}, {\"test preparation course\", type text}, {\"math score\", Int64.Type}, {\"reading score\", Int64.Type}, {\"writing score\", Int64.Type}}),",
                 "    #\"Added Custom\" = Table.AddColumn(#\"Tipo Alterado\", \"Custom\", each ([math score]+[reading score]+[writing score])/3),",
