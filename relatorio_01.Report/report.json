@@ -52,15 +52,6 @@
           "x": 402.99,
           "y": 37.61,
           "z": 1000.00
-        },
-        {
-          "config": "{\"name\":\"f10ec8e1851470281882\",\"layouts\":[{\"id\":0,\"position\":{\"x\":590.149253731343,\"y\":37.61194029850751,\"z\":3000,\"width\":225.67164179104478,\"height\":156.71641791044775,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(StudentsPerformance.gender)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"StudentsPerformance\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2},\"Name\":\"Min(StudentsPerformance.gender)\",\"NativeReferenceName\":\"Count of gender\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"gender\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 156.72,
-          "width": 225.67,
-          "x": 590.15,
-          "y": 37.61,
-          "z": 3000.00
         }
       ],
       "width": 1280.00
